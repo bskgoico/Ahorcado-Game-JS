@@ -22,16 +22,22 @@ let usedLetters; //Letras usadas.
 let mistakes; //Errores.
 let hits; //Aciertos.
 
+
+// Funcion que añade letras
 const addLetter = letter => {
   const letterElement = document.createElement('span');
   letterElement.innerHTML = letter.toUpperCase();
   usedLettersElement.appendChild(letterElement);
 };
 
+
+//Funcion que agrega las partes del cuerpo
 const addBodyPart = bodyPart => {
   ctx.fillStyle = '#fff';
   ctx.fillRect(...bodyPart);
 };
+
+
 
 const wrongLetter = () => {
   addBodyPart(bodyParts[mistakes]);
