@@ -88,6 +88,7 @@ const drawWord = () => {
   });
 };
 
+//Funcion que selecciona una palabra random de palabras.js
 const selectRandomWord = () => {
   let word = words[Math.floor((Math.random() * words.length))].toUpperCase();
   selectedWord = word.split("");
